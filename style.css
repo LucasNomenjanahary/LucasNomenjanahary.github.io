@@ -471,3 +471,8 @@ section { padding: 8rem 5vw; position: relative; }
   .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hobby-grid { grid-template-columns: 1fr; }
 }
+
+@media (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor-dot, .cursor-ring { display: none; }
+}

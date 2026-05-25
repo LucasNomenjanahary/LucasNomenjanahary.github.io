@@ -2,15 +2,20 @@
    LUCAS — PORTFOLIO · projet.js
    ============================================================ */
 
-// ---------- Cursor ----------
-const dot  = document.querySelector('.cursor-dot');
-const ring = document.querySelector('.cursor-ring');
-document.addEventListener('mousemove', e => {
-  dot.style.left  = e.clientX + 'px';
-  dot.style.top   = e.clientY + 'px';
-  ring.style.left = e.clientX + 'px';
-  ring.style.top  = e.clientY + 'px';
-});
+// ---------- Cursor (desktop only) ----------
+if (window.matchMedia('(pointer: fine)').matches) {
+  const dot  = document.querySelector('.cursor-dot');
+  const ring = document.querySelector('.cursor-ring');
+  document.addEventListener('mousemove', e => {
+    dot.style.left  = e.clientX + 'px';
+    dot.style.top   = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+    ring.style.top  = e.clientY + 'px';
+  });
+} else {
+  document.querySelector('.cursor-dot').style.display  = 'none';
+  document.querySelector('.cursor-ring').style.display = 'none';
+}
 
 // ---------- Nav scroll ----------
 const nav = document.getElementById('nav');
