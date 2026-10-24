@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,6 +30,7 @@
     <ul class="nav-links">
       <li><a href="#home">Accueil</a></li>
       <li><a href="#about">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
       <li><a href="#hobby">Hobby</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -42,6 +45,7 @@
     <ul>
       <li><a href="#home" class="mm-link">Accueil</a></li>
       <li><a href="#about" class="mm-link">À propos</a></li>
+      <li><a href="#projets" class="mm-link">Projets</a></li>
       <li><a href="#hobby" class="mm-link">Hobby</a></li>
       <li><a href="#skills" class="mm-link">Skills</a></li>
       <li><a href="#contact" class="mm-link">Contact</a></li>
@@ -66,7 +70,7 @@
       </p>
       <div class="home-cta reveal">
         <a href="#contact" class="btn-primary">Me contacter</a>
-        <a href="#about" class="btn-ghost">En savoir plus</a>
+        <a href="#projets" class="btn-ghost">Voir mes projets</a>
       </div>
       <div class="home-socials reveal">
         <a href="https://github.com" target="_blank" class="social-link">
@@ -104,7 +108,7 @@
             <span class="stat-label">Langues</span>
           </div>
           <div class="stat">
-            <span class="stat-num">4+</span>
+            <span class="stat-num">5+</span>
             <span class="stat-label">Tech</span>
           </div>
         </div>
@@ -136,9 +140,116 @@
     </div>
   </section>
 
+  <!-- PROJETS L1 -->
+  <section class="projets" id="projets">
+    <div class="section-label reveal">03 — Projets L1</div>
+    <h2 class="section-title reveal">Ce que j'ai <em>réalisé</em></h2>
+    <p class="section-sub reveal">Travaux pratiques et projets réalisés au cours de ma première année en Informatique à l'UCFM.</p>
+
+    <div class="projets-grid">
+
+      <!-- Dotfiles / Environnement Dev -->
+      <div class="projet-card reveal featured">
+        <div class="projet-header">
+          <div class="projet-tag">Projet principal</div>
+          <div class="projet-techs">
+            <span class="tech-badge">Bash</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Linux</span>
+          </div>
+        </div>
+        <h3 class="projet-title">Gestionnaire de <em>dotfiles</em></h3>
+        <p class="projet-desc">
+          Outil léger de synchronisation d'environnement de travail multi-machines. Permet de configurer
+          rapidement un nouveau poste avec installation automatisée des outils, extensions
+          et variables d'environnement.
+        </p>
+        <div class="projet-footer">
+          <div class="projet-points">
+            <span>✦ Configuration automatisée</span>
+            <span>✦ Multi-machines</span>
+            <span>✦ Variables d'environnement</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Modélisation 3D -->
+      <div class="projet-card reveal">
+        <div class="projet-header">
+          <div class="projet-tag">3D &amp; Design</div>
+          <div class="projet-techs">
+            <span class="tech-badge">Blender</span>
+            <span class="tech-badge">Modélisation</span>
+          </div>
+        </div>
+        <h3 class="projet-title">Modélisation <em>3D</em></h3>
+        <p class="projet-desc">
+          Création de modèles 3D dans le cadre du cours de modélisation. Apprentissage des
+          concepts de maillage, textures, éclairage et rendu.
+        </p>
+        <div class="projet-footer">
+          <div class="projet-points">
+            <span>✦ Maillage &amp; UV mapping</span>
+            <span>✦ Textures &amp; matériaux</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Canva / Design graphique -->
+      <div class="projet-card reveal">
+        <div class="projet-header">
+          <div class="projet-tag">Design</div>
+          <div class="projet-techs">
+            <span class="tech-badge">Canva</span>
+            <span class="tech-badge">UI/UX</span>
+          </div>
+        </div>
+        <h3 class="projet-title">Création <em>graphique</em></h3>
+        <p class="projet-desc">
+          Conception de supports visuels et d'interfaces avec Canva. Affiches, présentations
+          et maquettes dans le cadre des cours et projets personnels.
+        </p>
+        <div class="projet-footer">
+          <div class="projet-points">
+            <span>✦ Identité visuelle</span>
+            <span>✦ Mise en page</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Ce portfolio -->
+      <div class="projet-card reveal">
+        <div class="projet-header">
+          <div class="projet-tag">Web</div>
+          <div class="projet-techs">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+        </div>
+        <h3 class="projet-title">Ce <em>portfolio</em></h3>
+        <p class="projet-desc">
+          Portfolio personnel développé de zéro en HTML/CSS/JS pur. Design sombre avec animations,
+          curseur personnalisé, IntersectionObserver et formulaire de contact fonctionnel.
+        </p>
+        <div class="projet-footer">
+          <div class="projet-points">
+            <span>✦ Sans framework</span>
+            <span>✦ Responsive design</span>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- HOBBY -->
   <section class="hobby" id="hobby">
-    <div class="section-label reveal">03 — Hobbies</div>
+    <div class="section-label reveal">04 — Hobbies</div>
     <h2 class="section-title reveal">Ce qui me <em>définit</em></h2>
     <div class="hobby-grid">
       <div class="hobby-card reveal">
@@ -178,7 +289,7 @@
 
   <!-- SKILLS -->
   <section class="skills" id="skills">
-    <div class="section-label reveal">04 — Skills</div>
+    <div class="section-label reveal">05 — Skills</div>
     <h2 class="section-title reveal">Mes <em>compétences</em></h2>
     <div class="skills-grid">
       <div class="skills-col reveal">
@@ -196,14 +307,11 @@
           <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
         </div>
       </div>
+
       <div class="skills-col reveal">
-        <h3 class="skills-cat">Programmation</h3>
+        <h3 class="skills-cat">Web & Programmation</h3>
         <div class="skill-item">
-          <div class="skill-header"><span>HTML</span><span class="skill-pct">75%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-header"><span>CSS</span><span class="skill-pct">75%</span></div>
+          <div class="skill-header"><span>HTML / CSS</span><span class="skill-pct">75%</span></div>
           <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
         </div>
         <div class="skill-item">
@@ -214,13 +322,49 @@
           <div class="skill-header"><span>Python</span><span class="skill-pct">45%</span></div>
           <div class="skill-bar"><div class="skill-fill" data-w="45"></div></div>
         </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Langage C</span><span class="skill-pct">45%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="45"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Bash / Linux</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>SQL</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="50"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>MongoDB</span><span class="skill-pct">40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="40"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-col reveal">
+        <h3 class="skills-cat">Outils & Design</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span>Git / GitHub</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Canva / Design</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Blender 3D</span><span class="skill-pct">45%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="45"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Maintenance informatique</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="section-label reveal">05 — Contact</div>
+    <div class="section-label reveal">06 — Contact</div>
     <h2 class="section-title reveal">Parlons <em>ensemble</em></h2>
     <div class="contact-grid">
       <div class="contact-info reveal">
@@ -241,23 +385,27 @@
         </div>
       </div>
       <form class="contact-form reveal" id="contactForm">
+        <div class="form-status" id="formStatus"></div>
         <div class="form-group">
-          <input type="text" id="fname" placeholder=" " required />
+          <input type="text" id="fname" name="from_name" placeholder=" " required />
           <label for="fname">Nom complet</label>
         </div>
         <div class="form-group">
-          <input type="email" id="femail" placeholder=" " required />
+          <input type="email" id="femail" name="from_email" placeholder=" " required />
           <label for="femail">Email</label>
         </div>
         <div class="form-group">
-          <input type="text" id="fsubject" placeholder=" " required />
+          <input type="text" id="fsubject" name="subject" placeholder=" " required />
           <label for="fsubject">Sujet</label>
         </div>
         <div class="form-group">
-          <textarea id="fmsg" rows="4" placeholder=" " required></textarea>
+          <textarea id="fmsg" name="message" rows="4" placeholder=" " required></textarea>
           <label for="fmsg">Message</label>
         </div>
-        <button type="submit" class="btn-primary btn-full">Envoyer</button>
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          <span class="btn-text">Envoyer</span>
+          <span class="btn-loader" style="display:none">⏳ Envoi en cours…</span>
+        </button>
       </form>
     </div>
   </section>
@@ -276,6 +424,7 @@
         <ul>
           <li><a href="#home">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
           <li><a href="#hobby">Hobby</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
